@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     res.status(500).json({
       status: 'degraded',
       db: 'error',
-      message: err instanceof Error ? err.message : 'Unknown error'
+      message: err instanceof Error ? err.message : 'Unknown error',
     })
   }
 })
